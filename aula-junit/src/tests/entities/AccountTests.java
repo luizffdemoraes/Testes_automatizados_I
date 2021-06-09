@@ -9,7 +9,7 @@ public class AccountTests {
 	
 	//deposito deveria aumentar o saldo quando eu entrar com um valor positivo de dinheiro
 	@Test
-	public void depositShouldIncreaseBalanceWhenPositiveAmount() {
+	public void depositShouldIncreaseBalanceAndDiscountFeeWhenPositiveAmount() {
 		
 		/* 
 		 * Padrão AAA
