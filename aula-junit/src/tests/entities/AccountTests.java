@@ -31,5 +31,19 @@ public class AccountTests {
 		// - Assert
 		Assertions.assertEquals(expectedValue, acc.getBalance());
 	}
+	
+	//Segundo Teste - Se o metodo deposit ao receber um valor negativo não vai fazer nada.
+	@Test
+	public void depositShouldDoNothingWhenNegativeAmount() {
+		
+		double expectedValue = 100.0;
+		Account acc = new Account(1L, expectedValue);
+		double amount = -200.0;
+		
+		acc.deposit(amount);
+		
+		Assertions.assertEquals(expectedValue, acc.getBalance());
+		
+	}
 
 }
